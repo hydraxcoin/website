@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<meta name="author" content="HYDRA-X" />
+	<meta name="description" content="HYDRA-X. ">
+	<meta name="viewport" content="device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>HYDRA-X | Official Site</title>
+	<meta name="Keywords" content="HYDRA-X, cryptocurrency, PoW, blockchain, privacy">
+
+
+  <!-- Google Fonts -->
+ 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+	<!-- FontAwesome -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<!-- Royal Preloader CSS -->
+	<link href="css/royal_preloader.css" rel="stylesheet">
+	<!-- Standard Favicon -->
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+	<!-- FontAwesome -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+	<!-- jQuery Files -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+	<!-- Parallax File -->
+	<script type="text/javascript" src="js/parallax.min.js"></script>
+
+        <!-- Mapbox -->
+        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.0/mapbox-gl.js'></script>
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.0/mapbox-gl.css' rel='stylesheet' />
+
+	<!-- Royal Preloader -->
+	<script type="text/javascript" src="js/royal_preloader.min.js"></script>
+	<script type="text/javascript">
+		Royal_Preloader.config({
+		    mode:           'progress',
+		    showProgress:   true,
+		    background:     '#1d1d1d'
+		});
+	</script>
+
+	<!-- Stylesheets -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/ionicons.min.css" rel="stylesheet">
+	<link href="css/pe-icon-7-stroke.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/logoiconfont.css" rel="stylesheet">
+	<link href="css/style-new2.css" rel="stylesheet" title="main-css">
+	<link href="css/colors/green.css" rel="stylesheet">
+
+</head>
+<body class="royal_preloader" data-spy="scroll" data-target=".navbar" data-offset="70">
+<div id="royal_preloader"></div>
+
+<!-- Begin Header -->
+<header>
+	<!-- Begin Navigation -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="row">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand scroll-link" href="#" data-id="home">
+						<h2><sup><strong>&nbsp;HYDRA-X</strong></sup></h2></a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#home" data-id="home" class="scroll-link"><strong>Home</strong></a></li>
+						<li><a href="#download" data-id="download" class="scroll-link"><strong>Download</strong></a></li>
+						<li><a href="#why" data-id="why" class="scroll-link"><strong>Features</strong></a></li>
+						<li><a href="#specs" data-id="specs" class="scroll-link"><strong>Specs</strong></a></li>
+						<li><a href="#roadmap" data-id="roadmap" class="scroll-link"><strong>Roadmap</strong></a></li>
+						<li><a href=http://155.138.134.128/ target="_blank"><strong>Explorer</strong></a></li>
+						<!--<li><a href=news.html>News</a></li>-->
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div>
+		</div><!-- /.container-fluid -->
+	</nav>
+	<!-- End Navigation -->
+</header>
+<!-- End Header -->
+
+<!-- Begin Jumbotron -->
+<div class="jumbotron jumbotron-main" id="home">
+
+	<div id="map-wrapper">
+		<div id="map" style=" top: 0; bottom: 0; width: 100%; height: 100%;"></div>
+	</div>
+
+	<div class="container center-vertically-holder">
+
+		<div class="center-vertically">
+			<div id="scaleReveal" class="col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3 text-center">
+				<object>
+					<embed src="images/logos/hydrax_stacked_white%402x.png" height="20%" width="20%">
+				</object>
+				<div class="ticker">
+					<h1>HYDRA-X is</h1>
+					<h1>Fast</h1>
+					<h1>Easy</h1>
+					<h1>Safe</h1>
+				</div>
+		<!-- Coin Market Cap widget
+		<div class="center-horizontally">
+			<div style="color: #494949; padding-left: 20px; padding-top: 20px; font-family: 'Roboto',sans-serif;" class="coinmarketcap-currency-widget" data-currencyid="8837" data-base="USD" data-secondary="BTC" data-ticker="false" data-rank="true" data-marketcap="false" data-volume="true" data-statsticker="false" data-stats="USD">
+			<script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
+			</div>
+		</div>
+	  -->
+				<hr>
+				<p>HYDRA-X is a fast and easy way to send money<br /> to friends and businesses.</p>
+				<a href="#download" data-id="download" class="scroll-link btn btn-default btn-white btn-lg mt15">Download&nbsp;<span class="ion-android-arrow-down"></span></a>
+			</div><!-- /.column -->
+		</div><!-- /.vertical center -->
+	</div><!-- /.container -->
+</div>
+<!-- End Jumbotron -->
+
+<!-- Begin Intro -->
+<section id="download">
+
+	<!-- Begin Hello Intro -->
+	<div id="hello-intro" class="pt60 pb60">
+		<div class="container">
+			<div class="row">
+<!--
+				<div class="col-md-12">
+					<h3 ><strong>We have builds for Windows, MacOS, and Ubuntu Linux. </strong>If you prefer <strong>source code</strong>, you can find that <a href=https://github.com/hydraxcoin/hydra-x/ target="_blank">here</a>.</h3>
+				</div>
+-->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</div><!-- /.div -->
+	<!-- End Hello Intro -->
+
+	<!-- Begin Our Process Title -->
+	<div id="our-process-title" class="pt30 pb30">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h4 class="no-margin">Select Your System</h4>
+				</div>
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</div><!-- /.div -->
+	<!-- End Our Process Title -->
+
+	<!-- Begin Our Process -->
+	<div id="our-process">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-4 col-md-4 col-lg-4 process-box text-center pt50 pb50">
+					<div class="leftReveal">
+						<div class="process-intro">
+							<h3 class="process-number">Apple</h3>
+							<div><i class="process-icons fab fa-apple"></i></div>
+							<h2>Download Latest</h2>
+						</div>
+						<div class="process-content">
+							<div><span class="process-icons pe-7s-users"></span></div>
+							<h2 class="mt15 mb20">Mac OS 10.13+ x86_64</h2>
+							<p class="no-margin">
+								<a href=https://github.com/hydraxcoin/hydra-x/releases/tag/v1.0.0/HYDRAX-Qt-v1.0.0-osx.dmg target="_blank">&nbsp;<strong>GUI Download</strong></a>
+							</p>
+						</div>
+					</div><!-- /.animation -->
+				</div><!-- /.column -->
+				<div class="col-sm-4 col-md-4 col-lg-4 process-box text-center pt50 pb50">
+					<div class="bottomReveal">
+						<div class="process-intro">
+							<h3 class="process-number">Windows</h3>
+							<div><i class="process-icons fab fa-windows"></i></span></div>
+							<h2>Download Latest</h2>
+						</div>
+						<div class="process-content">
+							<div><span class="process-icons pe-7s-users"></span></div>
+							<h2 class="mt15 mb20">Windows x86_64</h2>
+							<p class="no-margin">
+								<a href=https://github.com/hydraxcoin/hydra-x/releases/tag/v1.0.0/HYDRAX-release-v1.0.0-win64.zip target="_blank">&nbsp;<strong>GUI + CLI Download</strong></a>
+							</p>
+						</div>
+					</div><!-- /.animation -->
+				</div><!-- /.column -->
+				<div class="col-sm-4 col-md-4 col-lg-4 process-box text-center pt50 pb50 no-border-right">
+					<div class="rightReveal">
+						<div class="process-intro">
+							<h3 class="process-number">Linux</h3>
+							<div><i class="process-icons fab fa-linux"></i></span></div>
+							<h2>Download Latest</h2>
+						</div>
+						<div class="process-content">
+							<div><span class="process-icons pe-7s-users"></span></div>
+							<h2 class="mt15 mb20">Linux 18.04 x86_64</h2>
+							<p class="no-margin">
+								<a href=https://github.com/hydraxcoin/hydra-x/releases/tag/v1.0.0/HYDRAX-v1.0.0-x86_64-linux-gnu.tar.gz target="_blank">&nbsp;<strong>GUI + CLI Download</strong></a>
+							</p>
+						</div>
+					</div><!-- /.animation -->
+				</div><!-- /.column -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</div><!-- /.div -->
+	<!-- End Our Process -->
+
+	<!-- Begin Quote Carousel -->
+	<div id="carousel" class="testimonial-carousel pt40 pb20">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1 text-center">
+					<span class="pe-7s-close heading-3-icon"></span>
+					<h2 class="heading-3">HYDRA-X Facts</h2>
+					<div class="fade-quote-carousel carousel slide" id="quote-carousel" data-ride="carousel" data-interval="3000">
+						<!-- Carousel indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+							<li data-target="#quote-carousel" data-slide-to="1"></li>
+							<li data-target="#quote-carousel" data-slide-to="2"></li>
+						</ol>
+						<!-- Carousel items -->
+						<div class="carousel-inner">
+							<div class="active item" style="height=150px;">
+								<blockquote>
+									HYDRA-X has a 1 minute block time.
+								</blockquote>
+							</div>
+							<div class="item" style="height=150px;">
+								<blockquote>
+									HYDRA-X has wallets for Windows, MacOS, and Linux.
+								</blockquote>
+							</div>
+							<div class="item" style="height=150px;">
+								<blockquote>
+									You can restore a deleted HYDRA-X wallet with your view key and spend key.
+								</blockquote>
+							</div>
+						</div>
+
+					</div><!-- /.carousel -->
+				</div><!-- /.column -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</div><!-- /.carousel -->
+	<!-- End Quote Carousel -->
+
+</section><!-- /.section -->
+<!-- End Intro -->
+
+<!-- Begin why -->
+<section id="why" class="background2 section-padding">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 section-title text-center">
+				<h2>Why HYDRA-X?</h2>
+				<span class="section-divider"></span>
+			</div><!-- /.column -->
+		</div><!-- /.row -->
+
+		<div class="row">
+			<!-- Item 1 -->
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+				<div class="services-box leftReveal">
+					<span class="pe-7s-gleam services-icon"></span>
+					<h3 class="service-name"><strong>1. Fast Transactions</strong></h3>
+					<p class="text-small">HYDRA-X is creating blocks every minute.</p>
+				</div>
+			</div><!-- /.column -->
+
+			<!-- Item 2 -->
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt30-xs">
+				<div class="services-box topReveal">
+					<span class="pe-7s-look services-icon"></span>
+					<h3 class="service-name"><strong>2. Secure</strong></h3>
+					<p class="text-small">HYDRA-X is based on the very robust Bitcoin codebase.</p>
+				</div>
+			</div><!-- /.column -->
+
+			<!-- Item 3 -->
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt30-sm mt30-xs">
+				<div class="services-box rightReveal">
+					<span class="pe-7s-bicycle services-icon"></span>
+					<h3 class="service-name"><strong>3. Easy To Use</strong></h3>
+					<p class="text-small">We have easy to use CLI and GUI wallets for Windows, MacOS. and Linux.</p>
+
+				</div>
+			</div><!-- /.column -->
+
+			<!-- Item 4 -->
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt30">
+				<div class="services-box leftReveal">
+					<span class="pe-7s-plugin services-icon"></span>
+					<h3 class="service-name"><strong>4. Green PoS</strong></h3>
+					<p class="text-small">HYDRA-X is generated through PoS. Making HDX better for the environment.</p>
+
+				</div>
+			</div><!-- /.column -->
+
+
+			<!-- Item 5 -->
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt30">
+				<div class="services-box bottomReveal">
+					<span class="pe-7s-users services-icon"></span>
+					<h3 class="service-name"><strong>5. Community</strong></h3>
+					<p class="text-small">The HYDRA-X community is very welcoming to all users and developers. Please join us in our <a href=https://discord.gg/ target="_blank">Discord Chat</a>.</p>
+				</div>
+			</div><!-- /.column -->
+
+			<!-- Item 6 -->
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt30">
+				<div class="services-box rightReveal">
+					<span class="pe-7s-headphones services-icon"></span>
+					<h3 class="service-name"><strong>6. Support</strong></h3>
+					<p class="text-small">We are growing a community of developers. You can help by testing software and submitting bug reports.</p>
+				</div>
+			</div><!-- /.column -->
+
+		</div><!-- /.row -->
+	</div><!-- /.container -->
+</section><!-- /.section -->
+<!-- End Services -->
+
+<!--New Section-->
+
+<!-- Begin Our Count -->
+<section id="ourcount" class="section-padding parallax-window" data-parallax="scroll" data-image-src="">
+	<div class="container" id="specs">
+		<div class="row mb30">
+			<div class="section-title col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3 text-center">
+				<h2>The Fine Print</h2>
+				<span class="section-divider mb15"></span>
+				<p class="no-margin">Here are some quick details about the project.</p>
+				<p class="text-small"></p>
+			</div><!-- /.column -->
+		</div><!-- /.row -->
+		<div class="row">
+			<div class="col-sm-6 col-md-3 item leftReveal">
+				<div class="circle-hold">
+					<i class="ion-cube"></i>
+				</div>
+				<h2 class="timer mb5" data-from="1" data-to="5" data-refresh-interval="20">1</h2><h5>HDX</h5>
+				<p class="no-margin">Avg. Block Reward</p>
+			</div><!-- /.column -->
+			<div class="col-sm-6 col-md-3 item mt30-xs rightReveal">
+				<div class="circle-hold">
+					<i class="ion-clock"></i>
+				</div>
+				<h2 class="timer mb5" data-from="1" data-to="60" data-refresh-interval="20">1</h2>
+				<p class="no-margin">1 Block every<br> 60 seconds</p>
+			</div><!-- /.column -->
+			<div class="col-sm-6 col-md-3 item mt30-xs mt30-sm leftReveal">
+				<div class="circle-hold">
+					<i class="ion-star"></i>
+				</div>
+				<h2 class="timer mb5" data-from="1" data-to="5000" data-refresh-interval="20">1</h2>
+				<p class="no-margin">PoW Blocks</p>
+			</div><!-- /.column -->
+			<div class="col-sm-6 col-md-3 item mt30-xs mt30-sm rightReveal">
+				<div class="circle-hold">
+					<i class="ion-happy-outline"></i>
+				</div>
+				<h2 class="timer mb5" data-from="0" data-to="666000" data-refresh-interval="20">1</h2>
+				<p class="no-margin">Premine</p>
+
+			</div><!-- /.column -->
+		</div><!-- /.row -->
+	</div><!-- /.container -->
+</section><!-- /.section -->
+<!-- End Our Count -->
+
+<section>
+	<div class="container" class="section-padding parallax-window" data-parallax="">
+
+			<div class="col-xs-12 section-title text-center">
+				<h2>About HYDRA-X</h2>
+				<!--<h3 style="text-align: left;"><strong>HYDRA-X:</strong><br> a decentralized crypto for...  </h3>-->
+				<hr>
+				<p>HYDRA-X is a revolutionary peer-to-peer electronic cash system that allows you to send money over the internet, without any restrictions. HYDRA-X is decentralized, open source, and gives users full control over their money. HYDRA-X is fast, efficient, and secure, backed by industry leading technology and security.</p>
+				<!--<p><a href="files/HYDRA-X_Whitepaper_V1.pdf" data-id="download" class="btn btn-white btn-lg mt15">To learn more click here&nbsp;<span class="ion-android-arrow-down"></span></a></p>-->
+
+
+		</div>
+	</div>
+</section>
+
+<!-- Begin Timeline -->
+<section id="roadmap" class="background1 section-padding-top">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 section-title text-center">
+				<h2>Roadmap</h2>
+				<span class="section-divider"></span>
+			</div><!-- /.column -->
+		</div><!-- /.row -->
+		<div class="row">
+			<div class="col-lg-12">
+				<ul class="timeline pb80">
+
+					<!-- Item 1 -->
+					<li>
+						<div class="timeline-image scaleReveal"><img alt="" class="img-circle img-responsive" src="images/timeline-1.png"></div>
+						<div class="timeline-panel leftReveal">
+							<div class="timeline-heading">
+								<h5 class="heading-1 mb15">December 2021</h5>
+								<h4 class="subheading">Hello HYDRA-X</h4>
+							</div>
+							<div class="timeline-body">
+								<p>HYDRA-X was born <strong>December 10th, 2021</strong>. </p>
+								<p>
+									In the beginning, we had CLI and GUI wallets for Linux, MacOS, and Windows. We also had an official blockchain explorer.</p>
+							</div>
+						</div>
+					</li>
+
+					<!-- Item 2 -->
+					<li class="timeline-inverted">
+						<div class="timeline-image scaleReveal"><img alt="" class="img-circle img-responsive" src="images/timeline-2.png"></div>
+						<div class="timeline-panel rightReveal">
+							<div class="timeline-heading">
+								<h5 class="heading-1 mb15">January-February 2022</h5>
+								<h4 class="subheading">Exchanges</h4>
+							</div>
+							<div class="timeline-body">
+								<p>HYDRA-X hopes to get listed on a number of exchanges by early 2022.</p>
+							</div>
+						</div>
+					</li>
+
+					<!-- Item 3 -->
+					<li>
+						<div class="timeline-image scaleReveal"><img alt="" class="img-circle img-responsive" src="images/timeline-3.png"></div>
+						<div class="timeline-panel leftReveal">
+							<div class="timeline-heading">
+								<h5 class="heading-1 mb15">May - June 2022</h5>
+								<h4 class="subheading">Mobile Wallets</h4>
+							</div>
+							<div class="timeline-body">
+								<p>HYDRA-X hopes to get mobile wallets for both Android and iOS.</p>
+							</div>
+						</div>
+					</li>
+
+					<!-- Item 4 -->
+					<li class="timeline-inverted">
+						<div class="timeline-image scaleReveal"><img alt="" class="img-circle img-responsive" src="images/timeline-6.png"></div>
+						<div class="timeline-panel rightReveal">
+							<div class="timeline-heading">
+								<h5 class="heading-1 mb15">TBD</h5>
+								<h4 class="subheading">TBD</h4>
+							</div>
+							<div >
+								<p></p>
+							</div>
+						</div>
+					</li>
+
+
+				</ul>
+			</div><!-- /.column -->
+		</div><!-- /.row -->
+	</div><!-- /.container -->
+</section><!-- /.section -->
+
+<!-- Begin Contact -->
+<section id="contact" class="background2 section-padding">
+	<div class="container">
+		<div class="row mb30">
+			<div class="col-sm-10 col-sm-offset-1 section-title text-center">
+				<h2>Still Interested?</h2>
+				<br />
+				<span class="section-divider mb15"></span>
+				<br />
+				<p class="no-margin scaleReveal">Join Us! No, seriously! Whatever your skill is, or what ideas you have, we are ready to hear about it!</p>
+				<br />
+				<p></p>
+			</div><!-- /.column -->
+		</div><!-- /.row -->
+		<div class="row">
+			<p align="center">© Copyright 2022 - HYDRA-X.org. Released under the <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT license.</a></p>
+			<!--<p align="center"><a href="files/terms-and-conditions-HDX.pdf" target="_blank" data-id="download" class="btn btn-white btn-lg mt15">Terms & Conditions&nbsp;<span class="ion-android-arrow-down"></span></a></p>-->
+			<!--<p align="center"><a href="files/privacy-policy-hdx.pdf" target="_blank" data-id="download" class="btn btn-white btn-lg mt15">Privacy Policy&nbsp;<span class="ion-android-arrow-down"></span></a></p>-->
+		</div><!-- /.row -->
+
+    <p align="center">
+		  <a href=https://twitter.com/hydraxcoin/ target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a> |
+		  <a href=https://github.com/hydraxcoin/ target="_blank" class="github"><i class="bx bxl-github"></i></a> |
+		  <a href=https://www.reddit.com/user/hydraxcoin/ target="_blank" class="reddit"><i class="bx bxl-reddit"></i></a>
+	  </p>
+
+	</div><!-- /.container -->
+
+</section><!-- /.section -->
+<!-- End Contact -->
+<!-- Begin Footer -->
+
+
+<!-- Javascript Files -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!--script type="text/javascript" src="js/particles.min.js"></script>
+<script type="text/javascript" src="js/particlesRun.js"></script-->
+<script type="text/javascript" src="js/jquery.mixitup.js"></script>
+<script type="text/javascript" src="js/form-validator.min.js"></script>
+<script type="text/javascript" src="js/jquery.inview.min.js"></script>
+<script type="text/javascript" src="js/jquery.countTo.js"></script>
+<script type="text/javascript">
+	/* ---- Counter (our count) ---- */
+	$('#ourcount').one('inview', function(event, isInView) {
+		if (isInView) {
+			$('.timer').countTo({speed: 3000});
+		}
+	});
+</script>
+<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="js/scrollreveal.min.js"></script>
+<script type="text/javascript" src="js/style-switcher.js"></script><!-- Remove for production -->
+<script type="text/javascript" src="js/map.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
